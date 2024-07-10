@@ -1,0 +1,134 @@
+/* author: https://codepen.io/danielwuachin/pen/NWoqxjv
+Jose Rodriguez */
+
+* {
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  
+  body {
+    background-color: #282828;
+  }
+  
+  .wrapper {
+    align-items: center;
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    width: 100%;
+  }
+  
+  .container {
+    display: flex;
+    flex-wrap: nowrap;
+    height: 400px;
+    justify-content: start;
+  }
+  
+  .card {
+    align-items: flex-end;
+    background-size: cover;
+    border-radius: .75rem;
+    border-radius: 2rem;
+    box-shadow: 0px 10px 30px -5px rgba(0,0,0,0.8);
+    cursor: pointer;
+    display: flex;
+    margin: 0 10px;
+    overflow: hidden;
+    transition: .6s cubic-bezier(.28,-0.03,0,.99);
+    width: 80px;
+  }
+  
+  .card > .row {
+    color: white;
+    display: flex;
+    flex-wrap: nowrap;
+  }
+  
+  .card > .row > .icon {
+    align-items: center;
+    background: #223;
+    border-radius: 50%;
+    color: white;
+    display: flex;
+    justify-content: center;
+    margin: 15px;
+    width: 50px;
+  }
+  
+  .card > .row > .description {
+    display: flex;
+    flex-direction: column;
+    height: 80px;
+    justify-content: center;
+    opacity: 0;
+    overflow: hidden;
+    transform: translateY(30px);
+    transition: all .3s ease;
+    transition-delay: .3s;
+    width: 520px;
+  }
+  
+  .description p {
+    color: #b0b0ba;
+    padding-top: 5px;
+  }
+  
+  .description h4 {
+    text-transform: uppercase;
+  }
+  
+  input {
+    display: 10000;
+  }
+  
+  input:checked + label {
+    width: 600px;
+  }
+  
+  input:checked + label .description {
+    opacity: 1 !important;
+    transform: translateY(0) !important;
+  }
+  
+  .card[for="c1"] {
+    background-image: url('pankaj-patel-yEAOfWSdzgM-unsplash.jpg');
+  }
+  
+  .card[for="c2"] {
+    background-image: url('backiee-276641.jpg');
+  }
+  
+  .card[for="c3"] {
+    background-image: url('backiee-50997.jpg');
+  }
+  
+  .card[for="c4"] {
+    background-image: url('backiee-98634.jpg');
+  }
+  
+  .card[for="c5"] {
+    background-image: url('backiee-221704.jpg');
+  }
+
+  .card[for="c6"] {
+    background-image: url('backiee-86291.jpg');
+  }
+
+  .card[for="c7"] {
+    background-image: url('arget-zvHhKiVuR9M-unsplash.jpg');
+  }
+
+  .card[for="c8"] {
+    background-image: url('backiee-80040.jpg');
+  }
+
+  .card[for="c9"] {
+    background-image: url('backiee-272873.jpg');
+  }
+  
+  
+  
+  
